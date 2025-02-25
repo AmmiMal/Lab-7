@@ -1,7 +1,6 @@
 import random
 import requests
 
-
 url = "https://rickandmortyapi.com/api/"
 response = requests.get(url)
 print(response.json())
@@ -14,7 +13,7 @@ print()
 # Примеры для /character
 
 print("Случайный персонаж из всех")
-url = f"https://rickandmortyapi.com/api/character/{random.randint(1,826)}"
+url = f"https://rickandmortyapi.com/api/character/{random.randint(1, 826)}"
 response = requests.get(url)
 print(response.json())
 print()
@@ -34,7 +33,7 @@ print()
 # Примеры для /location
 
 print("Случайная локация из всех")
-url = f"https://rickandmortyapi.com/api/location/{random.randint(1,126)}"
+url = f"https://rickandmortyapi.com/api/location/{random.randint(1, 126)}"
 response = requests.get(url)
 print(response.json())
 print()
